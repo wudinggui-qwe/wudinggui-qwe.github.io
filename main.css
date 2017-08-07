@@ -244,10 +244,9 @@ h4 {
   margin-top: 40px;
 }
 .contact_us{
+  width:84%;
   background-color: #ccc;
-  width:83%;
   margin:0 auto;
-  padding: 5px;
 }
 .contact_us:before{
   display: table;
@@ -277,7 +276,6 @@ h4 {
   margin: 9px auto -16px;
 }
 #footer{
-  width:81%;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
@@ -338,6 +336,9 @@ h5{
   .contact_right{
     width:100%;
   }
+  .contact_us{
+	 width:86%;
+  }
 }
 @media screen and (max-width: 650px){
  .nav_right{
@@ -345,6 +346,9 @@ h5{
  }
   .nav_mid #nav_open{
     display:block ;
+  }
+  .contact_us{
+	 width:87%;
   }
 }
 @media screen and (max-width: 450px){
@@ -354,6 +358,7 @@ h5{
     .contact_right img{
       width: 300px;
     }
+	
 }
 #nav_open {
   list-style: none;
