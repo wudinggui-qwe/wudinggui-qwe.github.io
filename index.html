@@ -2,21 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
     <title>个人作品集</title>
     <!-- <link href="dist/bootstrap.min.css" rel="stylesheet"> -->
     <link href="main.css" rel="stylesheet">
     <script>
-          function show_Meau(){
-              window.innerWidth=width;
-              var obj=document.getElementById("nav_bar");
-              if(width<1000){
-                  obj.style.display="none";
-              }
-              else {
-                  obj.style.display="block";
-              }
-
-          }
           function show_meau(){
               var obj=document.getElementById("nav_meau");
               obj.style.display="block";
@@ -32,7 +22,7 @@
         <div  class="nav">
             <div class="nav_mid">
                 <div class="nav_left">
-                    <a href="#">帕帕猴工作室
+                    <a href="#">帕帕猴网络工作室
                     </a>
                 </div>
                     <li id="nav_open" onMouseOver="show_meau()" onmouseout="hide_meau()">
@@ -140,8 +130,9 @@
                         <p>email: m17605033425@163.com</p>
                     </div>
                     <div class="contact_right">
-                    <img src="images/tubiao.png" alt/>
-                    </div>
+                        <a href="images/wx.png" target="_blank"
+                           onclick="window.open(this.href,'','width=440,height=590,left=150%');return false"/>
+                        <img src="images/tubiao.png" alt/></a>
                 </div></a>
             </div>
             <div id="footer">
