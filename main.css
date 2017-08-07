@@ -306,6 +306,20 @@ h5{
   .case_second{
     margin-top: 0;
   }
+  
+}
+@media screen and (max-width: 1020px){
+	.main_right{
+	  margin-top: 16%;
+  }
+}
+@media screen and (max-width: 800px){
+	.main_right{ 
+	  margin-top: 27%;
+  }
+  .contact_us{
+	  width: 85%;
+  }
 }
 @media screen and (max-width: 768px){
   .main_left{
