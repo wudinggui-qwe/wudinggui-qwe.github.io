@@ -339,20 +339,21 @@ h5{
     width:100%;
   }
 }
-@media screen and (max-width: 1120px){
-
-}
 @media screen and (max-width: 650px){
  .nav_right{
    display: none;
  }
-  #nav_open{
-    display:block !important;
+  .nav_mid #nav_open{
+    display:block ;
   }
-  .nav_left{
-
-  }
-
+}
+@media screen and (max-width: 450px){
+    .nav .nav_mid{
+      width:100% ;
+    }
+    .contact_right img{
+      width: 300px;
+    }
 }
 #nav_open {
   list-style: none;
