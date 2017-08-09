@@ -1,35 +1,40 @@
 html {
-    font-size:12px;
     margin:0;
     padding:0;
-}
-h4 h5{
-  margin:0;
-  padding:0;
 }
 body{
     margin:0;
     padding:0;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    background-color: #fff;
 
+}
+body a:hover{
+    color:black;
+    text-decoration:none;
+}
+body a{
+  color:black;
+  text-decoration: none;
+}
+.container1{
+  width: 100%;
 }
 .nav_left{
     float:left;
-    //width:230px;
-    height:80px;
-    margin-left:20px;
 }
 .nav_left a{
     font-size:26px;
     line-height:80px;
     text-decoration: none;
-    display:inline-block;
-    vertical-align:center;
-    color:white;
-    text-decoration: none;
+    display:block;
+    color:white !important;
+
 
 }
 .nav{
-    //height:80px;
     width:100%;
     background-color:#09BB07;
     position:fixed;
@@ -39,26 +44,37 @@ body{
     z-index: 10;
 }
 .nav_right{
-    width:260px;
-    height:80px;
+    padding-left:0;
     float:right;
+    line-height:80px;
+    margin-right: -15px;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 .nav_right li {
     height: 52px;
-    width:60px;
+    width:80px;
     display:inline-block;
     line-height: 56px;
     text-align: center;
 }
+.nav_mid:before{
+    display: table;
+    content: " ";
+}
 .nav_mid{
-    width:80%;
     height:52px;
-    margin:0 auto;
+    margin:3px auto;
+    max-width: 80%;
 }
 #nav_bar{
     display:table-cell;
     vertical-align: middle;
-    height:82px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+#nav_bar li{
+
 }
 .nav_right li a:hover{
     color:gray;
@@ -67,8 +83,18 @@ body{
     border-radius: 1em;
 }
 .nav_right li a{
+    margin-top: auto;
+    margin-bottom: auto;
     color:white;
     text-decoration: none;
+}
+#nav_open {
+    list-style: none;
+    float: right;
+    margin-top: 25px;
+    margin-right: 50px;
+    display:none;
+    width: 64px;
 }
 .main{
     margin:0 auto;
@@ -78,19 +104,24 @@ body{
     overflow:hidden;
 }
 .main_left{
-    margin-top:80px;
-    width:55%;
+    width: 66.66666667%;
+    vertical-align:middle;
     float:left;
     padding-left:16px;
+    display: table-cell;
+    margin-top: 80px;
+}
+.main_mid{
+    -webkit-box-sizing: border-box;
+    clear: both;
+    margin:auto 10px;
+    padding: 32px 8px;
 }
 .main_right{
-    margin-top:60px;
-    width:33.333333%;
     height:100%;
     float:left;
-    margin-left: 20px;
-  vertical-align: middle;
-  display: table-cell;
+    margin-top: 80px;
+    width: 33.3333332%;
 }
 .main_left p{
     text-indent:2em;
@@ -137,10 +168,11 @@ body{
     z-index: 1;
 }
 .image{
-    width:95%;
-    height:95%;
+    vertical-align: middle;
+    max-width: 250px;
     border-radius: 50%;
-    max-width: 328px;
+    margin: auto;
+    display: block;
 }
 .main_right h4{
     margin-top:2px;
@@ -159,13 +191,13 @@ body{
     padding: .2em .6em .3em;
 }
 .row{
-  width:81%;
+  width:82%;
   background-color: #eee;
   margin-top: 0;
   padding:40px 16px;
   overflow: hidden;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
 .case{
   width:33.3333333%;
@@ -244,7 +276,7 @@ h4 {
   margin-top: 40px;
 }
 .contact_us{
-  width:84%;
+    width: 82%;
   background-color: #ccc;
   margin:0 auto;
 }
@@ -263,17 +295,18 @@ h4 {
   color: #333;
 }
 .contact_right{
-  width:50%;
-  text-align: center;
-  float: left;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-top: 24px;
+    width:50%;
+    float: left;
 }
 .row_contact{
   width:100%;
   margin-top:1px;
   overflow:hidden;
-}
-#important{
-  margin: 9px auto -16px;
 }
 #footer{
   padding-right: 15px;
@@ -298,91 +331,82 @@ h5{
 #footer h5 a:hover{
   text-decoration: underline;
 }
-@media screen and (max-width: 1150px){
-  .case{
-    width:50%;
-    margin-bottom: 30px;
-  }
-  .case_second{
-    margin-top: 0;
-  }
-  
-}
-@media screen and (max-width: 1020px){
-	.main_right{
-	  margin-top: 16%;
-  }
-}
-@media screen and (max-width: 800px){
-	.main_right{ 
-	  margin-top: 27%;
-  }
-  .contact_us{
-	  width: 85%;
-  }
-}
-@media screen and (max-width: 768px){
-  .main_left{
-    width:100%;
-    padding:5px;
-  }
-  .main_right{
-    width:100%;
-    margin:60px auto 0;
-  }
-  .main_right img{
-    display: block;
-    margin: auto;
-  }
-  .case{
-    width:100%;
-    margin-bottom: 30px;
-  }
-  .case_second{
-    margin-top: 0;
-  }
-  .label_2{
+.icon-lit li{
+    list-style: none;
+    display: inline-block;
+    margin: 8px;
+    padding: 12px;
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
     text-align: center;
-  }
-  .contact_left{
-    width:100%;
-  }
-  .contact_right{
-    width:100%;
-  }
-  .contact_us{
-	 width:86%;
-  }
 }
-@media screen and (max-width: 650px){
- .nav_right{
-   display: none;
- }
-  .nav_mid #nav_open{
-    display:block ;
-  }
-  .contact_us{
-	 width:87%;
-  }
+.icon-lit{
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0;
+}
+.icon-lit a:hover{
+    color:#337ab7 ;
+}
+@media screen and (max-width: 1150px) {
+    .case {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+
+    .case_second {
+        margin-top: 0;
+    }
+
+}
+@media screen and (max-width: 950px)
+{
+    .main_left {
+        width: 50%;
+    }
+    .main_right{
+        width: 50%;
+    }
+    .case {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 880px) {
+    .contact_right{
+        width: 100%;
+    }
+    .contact_left{
+        width: 100%;
+    }
+    .icon-lit{
+        width:50%;
+    }
+}
+@media screen and (max-width: 750px) {
+    .nav_right{
+        display: none;
+    }
+    .nav_mid #nav_open{
+        display:block ;
+    }
+    .main_left {
+        width: 100%;
+    }
+    .main_right{
+        width: 100%;
+    }
 }
 @media screen and (max-width: 450px){
     .nav .nav_mid{
       width:100% ;
     }
-    .contact_right img{
-      width: 300px;
-    }
+
+
 	
 }
-#nav_open {
-  list-style: none;
-  display:table-cell;
-  float: right;
-  margin-top: 25px;
-  margin-right: 50px;
-  display:none;
-  width: 64px;
-}
+
 #nav_meau a{
   display:block;
   text-decoration: none;
