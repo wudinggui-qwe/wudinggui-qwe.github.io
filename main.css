@@ -92,7 +92,6 @@ body a{
     list-style: none;
     float: right;
     margin-top: 25px;
-    margin-right: 50px;
     display:none;
     width: 64px;
 }
@@ -176,7 +175,7 @@ body a{
 }
 .main_right h4{
     margin-top:2px;
-    text-align: center;
+    text-align: center !important;
     display: block;
     font-size:16px;
 }
@@ -207,7 +206,6 @@ body a{
 
 }
 .thumbnail{
-  width:303px;
   height:342px;
   text-decoration: none;
   color:black;
@@ -252,7 +250,6 @@ h4 {
   font-size: 18px;
 }
 .case_text{
-  width:293px;
   height:57px;
   text-align: center;
   margin:0 auto;
@@ -299,9 +296,11 @@ h4 {
     min-height: 1px;
     padding-right: 15px;
     padding-left: 15px;
-    margin-top: 24px;
     width:50%;
     float: left;
+}
+.contact_right ul{
+    margin-top: 0;
 }
 .row_contact{
   width:100%;
@@ -346,6 +345,7 @@ h5{
     margin-left: auto;
     margin-right: auto;
     padding-left: 0;
+    width:300px;
 }
 .icon-lit a:hover{
     color:#337ab7 ;
@@ -380,9 +380,6 @@ h5{
     .contact_left{
         width: 100%;
     }
-    .icon-lit{
-        width:50%;
-    }
 }
 @media screen and (max-width: 750px) {
     .nav_right{
@@ -402,7 +399,9 @@ h5{
     .nav .nav_mid{
       width:100% ;
     }
-
+    .icon-lit{
+        width:107%;
+    }
 
 	
 }
