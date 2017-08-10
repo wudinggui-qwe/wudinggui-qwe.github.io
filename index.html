@@ -18,6 +18,9 @@
               var obj=document.getElementById("nav_meau");
               obj.style.display="none";
           }
+        function show_imag(){
+            window.open('images/wx.png','','width=404,height=538,left=100,top=165')
+        }
     </script>
 </head>
 <body>
@@ -109,7 +112,7 @@
                     </a>
                 </div>
                 <div class="case case_second"  >
-                    <a class="thumbnail"  href="http://www.landfone.com.cn/" target="_blank">
+                    <a class="thumbnail" id="imag_1"  href="http://www.landfone.com.cn/" target="_blank">
                         <img src="images/case5.jpg"  class="case_images case4_image"   >
                         <div class="case_text">
                             <h4 >朗方官网</h4>
@@ -137,7 +140,8 @@
                     <div class="contact_right">
                             <ul class="icon-lit">
                                 <li>
-                                    <a href="" data-toggle="modal"  target="_blank"><i class="fa fa-wechat  "></i></a>
+                                    <a href="#"   onclick="show_imag()"
+                                       target="_blank"><i class="fa fa-wechat  "></i></a>
                                 </li>
                                 <li>
                                     <a href="http://wpa.qq.com/msgrd?v=3&uin=2372935946&site=qq&menu=yes" target="_blank"><i class="fa fa-qq  "></i></a>
