@@ -7,9 +7,10 @@
     <!-- <link href="dist/bootstrap.min.css" rel="stylesheet"> -->
     <link href="main.css" rel="stylesheet">
     <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-
-     <link href="bootstrap.min.css" rel="stylesheet">
-    <script>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <script src="bootstrap/js/jquery-1.11.3.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+     <script>
           function show_meau(){
               var obj=document.getElementById("nav_meau");
               obj.style.display="block";
@@ -18,14 +19,27 @@
               var obj=document.getElementById("nav_meau");
               obj.style.display="none";
           }
-        function show_imag(){
-            window.open('images/wx.png','','width=404,height=538,left=100,top=165')
+        function show_imag() {
+            window.open('images/wx.png', '', 'width=404,height=538,left=100,top=165')
         }
-    </script>
+          $('#target1').scrollspy({
+              offset : 0,
+              target : '#nav_bar',
+          });
+          $('#target2').scrollspy({
+              offset : 20,
+              target : '#nav_bar',
+          });
+          $('#target3').scrollspy({
+              offset : 30,
+              target : '#nav_bar',
+          });
+
+     </script>
 </head>
-<body>
+<body data-spy="scroll" data-target="#selector">
     <div class="container1 ">
-        <div  class="nav">
+        <div  class="nav1" id="header">
             <div class="nav_mid">
                 <div class="nav_left">
                     <a href="#">帕帕猴网络工作室
@@ -34,21 +48,21 @@
                     <li id="nav_open" onMouseOver="show_meau()" onmouseout="hide_meau()">
                         <img  src="images/bottom.png" alt="" />
                         <div id="nav_meau" style="display: none;">
-                        <a href="#target1" >关于我们</a>
+                        <div><a href="#target1" >关于我们</a></div>
                         <a href="#target2">成功案例</a>
                         <a href="#target3">联系我们</a>
                       </div>
                     </li>
-                <div class="nav_right">
-                    <ul id="nav_bar">
-                        <li id="nav_first"><a href="#target1" >关于我们</a></li>
+                <div class="nav_right" id="selector">
+                    <ul id="nav_bar" class="nav">
+                        <li class="active"><a href="#target1" >关于我们</a></li>
                         <li ><a href="#target2">成功案例</a></li>
                         <li><a href="#target3">联系我们</a></li>
                     </ul>
                 </div>
             </div>
             </div>
-            <div class="main" ><a name="target1">
+            <div class="main" id="target1">
               <div class="main_mid">
                <div class="main_left">
                  <p>
@@ -74,9 +88,9 @@
                   <img class="image" src="images/avatar.jpg" alt="人物" >
                     <h4>创办人-刘文灿</h4>
                 </div>
-             </div></a>
+             </div>
             </div>
-            <div class="row"><a name="target2">
+            <div class="row" id="target2">
                 <h2 class="text_center">成功案例</h2>
                  <hr  class="code code_dark"></hr>
                  <div class="case" >
@@ -126,9 +140,9 @@
                             <h4 >厦门大学电磁声学研究所</h4>
                         </div>
                     </a>
-                </div></a>
+                </div>
             </div>
-            <div class="contact_us"><a name="target3">
+            <div class="contact_us" id="target3">
                  <h2 class="text_center">联系我们</h2>
                  <hr class="code  code_dark2"></hr>
                 <div class="row_contact">
@@ -157,7 +171,7 @@
                                     </a>
                                 </li>
                             </ul>
-                </div></a>
+                </div>
             </div>
             <div id="footer">
                 <h4 style="color: white">帕帕猴网络工作室&copy;版权所有</h4>
